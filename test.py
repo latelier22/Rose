@@ -14,7 +14,7 @@ perso1 = Personne("Cyrille", 49)
 
 perso1.saluer()
 
-
+# commentaire
 perso2 = Personne("Rose",15)
 perso2.saluer()
 
