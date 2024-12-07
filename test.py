@@ -27,7 +27,11 @@ class Trinome:
       self.delta = b**2-4*a*c
 
 
-trinome1 = Trinome(1,2,1)
+a=float(input("a="))
+b=float(input("b="))
+c=float(input("c="))
+
+trinome1 = Trinome(a,b,c)
 
 print(trinome1.delta)
 
