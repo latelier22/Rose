@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décomposition d'un Vecteur</title>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+    <h2>Décomposition d'un Vecteur</h2>
+    <p>Un vecteur \( \mathbf{V} \) a une intensité de \( V = {{ V|round(2) }} \) unités et est orienté sous un angle de \( \theta = {{ theta_deg|round(1) }}^\circ \) par rapport à l'axe \( x \).</p>
+    
+    <p>Calculez ses composantes :</p>
+    <ul>
+        <li>\( V_x = V \cos(\theta) \)</li>
+        <li>\( V_y = V \sin(\theta) \)</li>
+    </ul>
+    <ul>
+        <li>Vx = {{Vx}}</li>
+        <li>Vy= {{Vy}}</li>
+        <li>
+            arc_start_angle = {{arc_start_angle}}
+        </li>
+        <li>
+            reference_axis = {{reference_axis}}
+        </li>
+    </ul>
+
+
+    <img src="{{ image_path }}" alt="Illustration du vecteur">
+
+    <form method="post">
+        <label for="vx">\( V_x \) = </label>
+        <input type="text" id="vx" name="vx" required>
+
+        <label for="vy">\( V_y \) = </label>
+        <input type="text" id="vy" name="vy" required>
+
+        <button type="submit">Valider</button>
+    </form>
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+</body>
+</html>
